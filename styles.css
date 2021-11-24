@@ -1,0 +1,274 @@
+body {
+background-color: rgb(252, 228, 10);
+}
+
+.header{
+    margin: 4% 0 0 0;
+}
+
+.headerTitle {
+text-align: center;
+margin-bottom: 0;
+padding-bottom: 0;
+color: rgb(0, 0, 0);
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+letter-spacing: 2.5px;
+}
+
+.headerDes {
+    text-align: center;
+    margin-top: -15px;
+    letter-spacing: 2.5px;
+}
+
+
+/* End of header */
+
+.mainBox {
+margin: 3% 15% 7% 15%;
+height: 700px;
+border-radius: 23px;
+background-color: #000000;
+} 
+
+
+/* End of Main Box */
+
+.firstLine {
+    height:20%;
+}
+
+ 
+
+#onLeft {
+    float: left;
+    background: rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-left: 6%;
+    border-radius: 13px;
+    width: 13%;
+    text-align: left;
+    padding: 1%;
+    display: inline;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+}
+
+
+#onRight>button {
+    float: right;
+    width: 100px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(252, 228, 10);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+#onRight>button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: rgb(12, 0, 0);
+    transform: translateY(-4px);
+}
+
+/* End of first line */
+
+.secondLine{
+    height:60%;
+}
+
+.secondLineBox{
+    background-color: rgb(102, 78, 209);
+    height:110%;
+    margin: 0 6%;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.secondLineBox > div >img{
+    height: 120px;
+    margin-top: 3%;
+}
+.secondLineBox > div >input{
+    width: 30%;
+    margin-top: 3%;
+    border-radius: 13px;
+    border: none;
+    height: 30px;
+    text-align: center;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 198, 12));
+}
+
+.wrap {
+    height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button{
+  width: 100px;
+  height: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(252, 228, 10);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left: -3%;
+}
+
+#button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: rgb(12, 0, 0);
+    transform: translateY(-4px);
+  }
+
+  .wrap2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -45px;
+}
+
+#button2{
+  width: 130px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(252, 228, 10);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#button2:hover {
+    background-color:#ff0000;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    transform: translateY(-4px);
+  }
+
+  .wrap3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -45px;
+  }
+  
+  #button3{
+    width: 130px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(109, 107, 107);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+    margin-top: 100px;
+  }
+  
+  
+
+.secondLineBox > div >p{
+    color:white;
+    font-size:20px;
+    margin-top: 10%;
+}
+
+
+/* End of second line */
+
+#changingP{
+  margin-top: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
+
+
+/* End of changing P */
+
+
+.thirdLine{
+    margin:8% 13%;
+    height:50px;
+    border-radius: 13px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 0.35rem rgb(255, 198, 12));
+
+}
+
+.thirdLine >h4 {
+padding: 2%;
+text-align: left;
+
+}
+
+/* End of third line */
+
+
+#congrats >h3,h5,h4{
+    margin: 1px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-top: 2%;
+    
+}
+
+#correctNumber, #congratsHighScores, #correctNumber, .congratsBest {
+  color:#ed0000;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+#gameOver >h2, h3, h5 {
+  margin: 5px;
+}
+
+#correctNumberInWrong {
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+/* End of messages */

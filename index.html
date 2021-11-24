@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a number!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<div class="header">
+    <div class="headerTitle"><h2>GUESS MY NUMBER</h2></div>
+    <div class="headerDes"><h4>Guess the number between 1 and 100</h4></div>
+</div>
+
+
+<div class="mainBox">
+    <div class="firstLine">
+        <div class="firstLineContents">
+             <div id="onLeft">Lives: <div id="lives">10</div> <br> High Score: <div id="highScore">0</div></div>
+             <div id="onRight">
+                 <button onclick="reload();">RESET</button>
+             </div>
+        </div>
+    </div>
+    <div class="secondLine">
+        <div id="line2box" class="secondLineBox">
+            <div><img src="question.png" alt="Question Image"></div>
+            <div class="userInput">
+                <input type="number" id="guessNumber" min="0" max="100" placeholder="Enter Number">
+                <div id="congrats" hidden>
+                    <h3>Congratulations :) Your guess was correct! </h3><br>
+                    <h4>My secret number is:</h4> <div id="correctNumber"></div><br>
+                    <h5>Your Score:</h5> <div id="congratsHighScores">0</div>
+                    <h5>Best:</h5> <div class="congratsBest">0</div>
+                </div>
+                <div id="gameOver" hidden>
+                    <h2>YOU LOSE! </h2>
+                    <h3>Don't give up and try again. You'll win next time!</h3><br>
+                    <h5>My number was:</h5><div id="correctNumberInWrong"></div>
+                    <p>PLEASE RESET GAME</p>
+                </div>
+            </div>
+            <div class="wrap">
+                <button id="button" onclick="checkGuess();">Check</button>
+            </div>
+            <div class="wrap2">
+                <button hidden id="button2" onclick="playAgain();">Play Again</button>
+            </div>
+            <div class="wrap3">
+                <button  hidden id="button3" onclick="location.reload();">Play Again</button>
+            </div>
+            <div><p id="changingP">Guess a Number!</p></div>
+        </div>
+       
+    </div>
+    <div class="thirdLine">
+        <h4 id="guessHistory">Guess History: </h4>
+    </div>
+</div>
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
