@@ -11,7 +11,7 @@ let congratsBest= document.getElementsByClassName("congratsBest")[0];
 function checkGuess(){ 
     let userGuess = Number(guessNumber.value);
 
-        if (userGuess=== null || userGuess === 0 && guessCount ===1) {
+        if (userGuess=== null || userGuess <= 0 || userGuess >100 && guessCount >=1) {
         guessHistory.textContent = "Guess History: ";
         document.getElementById("changingP").innerHTML = "No input or invalid value :( <br> Please write a number between 1-100";
       
@@ -30,7 +30,7 @@ function checkGuess(){
             congratsBest.innerHTML=highScore;
             win();
         
-          }else if (guessCount > 10) {
+          }else if (guessCount === 10) {
             document.getElementById("changingP").innerHTML = "game over";
             document.getElementById("line2box").style.backgroundColor = "#ff0004";
             document.querySelector("img").src = "gameover.jpg";
@@ -73,8 +73,9 @@ function reload() {
 
 
 function playAgain(){
-    randomNumber = Math.floor(Math.random() * 100) + 1;
+   randomNumber = Math.floor(Math.random() * 100) + 1;
     lives = 10;
+    guessCount =1;
     document.getElementById("congrats").hidden = true;
     document.getElementById("button2").hidden = true;
     document.querySelector("img").src = "question.png";
