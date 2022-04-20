@@ -28,12 +28,12 @@
         <div id="line2box" class="secondLineBox">
             <div><img src="question.png" alt="Question Image"></div>
             <div class="userInput">
-                <input type="number" id="guessNumber" min="0" max="100" placeholder="Enter Number">
+                <input type="number" onfocus="this.value=''"id="guessNumber" min="0" max="100" placeholder="Enter Number">
                 <div id="congrats" hidden>
                     <h3>Congratulations :) Your guess was correct! </h3><br>
                     <h4>My secret number is:</h4> <div id="correctNumber"></div><br>
                     <h5>Your Score:</h5> <div id="congratsHighScores">0</div>
-                    <h5>Best:</h5> <div class="congratsBest">0</div>
+                    <h5>Best:</h5> <div id="congratsBest">0</div>
                 </div>
                 <div id="gameOver" hidden>
                     <h2>YOU LOSE! </h2>
